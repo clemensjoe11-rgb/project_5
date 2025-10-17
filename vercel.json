@@ -1,6 +1,6 @@
 {
   "framework": "vite",
-  "buildCommand": "npm --prefix client ci && npm --prefix client run build",
+  "buildCommand": "cd client && npm install --no-audit --no-fund && npm run build",
   "outputDirectory": "client/dist",
   "cleanUrls": true,
   "rewrites": [
