@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npm --prefix client run dev",
-    "build": "npm --prefix client ci && npm --prefix client run build",
+    "build": "cd client && npm install --no-audit --no-fund && npm run build",
     "preview": "npm --prefix client run preview",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc",
